@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "effectsBank.h"
 
 @interface ReverbModuleView : UIViewController
+
+@property float mFeedback;
+@property float mTime;
+@property float mMix;
+@property IBOutlet UIPanGestureRecognizer* mPanGestureRecognizer;
+@property IBOutlet UIImageView* mFeedbackKnob;
+@property IBOutlet UIImageView* mTimeKnob;
+@property IBOutlet UIImageView* mMixKnob;
+@property IBOutlet UILabel* faderMax;
+@property IBOutlet UILabel* faderMin;
+
 
 @end

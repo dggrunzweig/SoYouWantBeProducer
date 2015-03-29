@@ -40,8 +40,12 @@ static OSStatus playbackCallback(void *inRefCon,
 								 AudioBufferList *ioData) {
 
 //callback for playback or both play and record
-    [iosAudio.mEffectsBank sendSignalThroughBank:(SInt16*)ioData->mBuffers[0].mData];
-	
+    [[effectsBank sharedEffectsBank] sendSignalThroughBank:(SInt16*)ioData->mBuffers[0].mData];
+    //printf("%i, %i\n", ioData->mBuffers[0].mNumberChannels, ioData->mBuffers[0].mDataByteSize);
+//    for (int i = 0; i < inNumberFrames; ++i)
+//    {
+//        printf("%i, ", ((SInt16*)ioData->mBuffers[0].mData)[i]);
+//    }
     return noErr;
 }
 
@@ -82,16 +86,12 @@ static OSStatus playbackCallback(void *inRefCon,
     mDataSizeBytes = 2; //16 bit integer linear PCM;
     mChannels = 2; //set later by the av session data
     mBufferLength = 512;
-    
     iosAudio.mSampleRate = mSampleRate;
     iosAudio.mChannels = mChannels;
     iosAudio.mBufferLength = mBufferLength;
     iosAudio.mDataSizeBytes = mDataSizeBytes;
     
-    mEffectsBank = [effectsBank alloc];
-    [mEffectsBank initialize:mBufferLength withSampleRate:mSampleRate];
-    
-    iosAudio.mEffectsBank = mEffectsBank;
+   
     
     //for FFT
     
@@ -114,6 +114,8 @@ static OSStatus playbackCallback(void *inRefCon,
     [self setupAVAudioSession];
     
     //set up the audioUnit
+    
+    [[effectsBank sharedEffectsBank] initialize:mBufferLength withSampleRate:mSampleRate numChannels:mChannels];
     
     [self configureAndInitializeAudioUnits];
     
@@ -163,7 +165,7 @@ static OSStatus playbackCallback(void *inRefCon,
         NSLog (@"Error activating audio session during initial setup.");
         return;
     }
-    int numChan = [mySession preferredOutputNumberOfChannels];
+    int numChan = [mySession outputNumberOfChannels];
     iosAudio.mChannels = numChan;
     mChannels = numChan;
     

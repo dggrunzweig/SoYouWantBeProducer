@@ -11,12 +11,13 @@
 
 #include <stdio.h>
 #import <Accelerate/Accelerate.h>
-//#import "DSBiquad.h"
+//#import "Biquad.h"
 
 class DSButterworthFilter
 {
 public:
-    double * mCoeffs;
+    float * mCoeffs;
+    void initialize();
     void generateLowPassCoeffs(int cutoffFreq, int sampleRate, float Q);
     void generateHighPassCoeffs(int cutoffFreq, int sampleRate, float Q);
     void generateBandPassCoeffs(int cutoffFreq, int sampleRate, float Q, float BW, float dBGain);

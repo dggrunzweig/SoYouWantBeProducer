@@ -10,4 +10,14 @@
 
 @interface PhaserModuleView : UIViewController
 
+@property float mSpeed;
+@property float mRange;
+@property float mMix;
+@property IBOutlet UIPanGestureRecognizer* mPanGestureRecognizer;
+@property IBOutlet UIImageView* mSpeedKnob;
+@property IBOutlet UIImageView* mRangeKnob;
+@property IBOutlet UIImageView* mMixKnob;
+@property IBOutlet UILabel* faderMax;
+@property IBOutlet UILabel* faderMin;
+
 @end

@@ -10,5 +10,11 @@
 #define __UWantBProducer__phaser__
 
 #include <stdio.h>
+#include "lfo.h"
+
+class phaser
+{
+    
+};
 
 #endif /* defined(__UWantBProducer__phaser__) */

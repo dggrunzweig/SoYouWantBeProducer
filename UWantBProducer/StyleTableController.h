@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "effectsBank.h"
 
 @interface StyleTableController : UITableViewController
+
+@property NSArray* stylesArray;
+
 
 @end

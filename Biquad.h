@@ -1,13 +1,12 @@
 //
-//  DSBiquad.h
-//  RondoCore
+//  Biquad.h
 //
 //  Created by David Grunzweig on 2/9/15.
-//  Copyright (c) 2015 Dysonics. All rights reserved.
+//  Copyright (c) 2015 David Grunzweig. All rights reserved.
 //
 
-#ifndef __RondoCore__DSBiquad__
-#define __RondoCore__DSBiquad__
+#ifndef __Biquad__
+#define __Biquad__
 
 #include <stdio.h>
 #import "DSButterworthFilter.h"
@@ -18,24 +17,29 @@ enum filterDesign {
 };
 
 enum filterType {
-    kHighPassFilter = 0,
-    kLowPassFilter = 1,
-    kBandPassFilter = 2,
+    kBiQuadHighPassFilter = 0,
+    kBiQuadLowPassFilter = 1,
+    kBiQuadBandPassFilter = 2,
 };
 
-class DSBiquad
+class Biquad
 {
 private:
-    double * mCoeffs;
-    float * mBuffer;
-    float * mDelay;
-    vDSP_biquad_Setup mSetup;
-    DSButterworthFilter* butterworth;
+    float*  mInputMemory;
+    float*  mOutputMemory;
+    DSButterworthFilter butterworth;
+    float* mTempOutput;
+    float* mTempInput;
+    int mSampleRate;
+    int mQ;
 public:
+    int mCutoff;
+    bool isLowPass;
+    void initialize(int numFrames);
     void createFilter(int cutOffFrequency, int sampleRate, float Q, int bandWidth, float gainDb, int taps, int filterType, int filterDesign);
     void filterBuffer(float * buffer, int numFrames);
-    ~DSBiquad();
+    void filterWithLFO(float * buffer, float * modulationBuffer, int numFrames);
 
 };
 
-#endif /* defined(__RondoCore__DSBiquad__) */
+#endif /* defined(__Biquad__) */

@@ -14,9 +14,14 @@
 
 @implementation StyleTableController
 
+@synthesize stylesArray;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    stylesArray = [[NSArray alloc] initWithObjects:@"Dubstep", @"Acid Bass", @"Trance Lead", @"House Subbass", nil];
+    
+    [[effectsBank sharedEffectsBank] resetSettings];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -32,26 +37,31 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+
+    return 4;
 }
 
-/*
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StyleCell"];
     
-    // Configure the cell...
-    
+    cell.textLabel.text = [NSString stringWithString:(self.stylesArray)[indexPath.row]];
     return cell;
+    
 }
-*/
+
+- (void) tableView: (UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath
+{
+//    printf("%u, ", (UInt32)indexPath.row);
+    [[effectsBank sharedEffectsBank] loadEffectBankSettings:(UInt32)indexPath.row];
+}
+
 
 /*
 // Override to support conditional editing of the table view.

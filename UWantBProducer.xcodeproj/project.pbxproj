@@ -8,13 +8,51 @@
 
 /* Begin PBXBuildFile section */
 		E3154F141A81673E00EEB60D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3154F131A81673E00EEB60D /* main.m */; };
-		E3154F171A81673E00EEB60D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3154F161A81673E00EEB60D /* AppDelegate.m */; };
-		E3154F1A1A81673E00EEB60D /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3154F191A81673E00EEB60D /* MasterViewController.m */; };
-		E3154F1D1A81673E00EEB60D /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3154F1C1A81673E00EEB60D /* DetailViewController.m */; };
+		E3154F171A81673E00EEB60D /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3154F161A81673E00EEB60D /* AppDelegate.mm */; };
 		E3154F201A81673E00EEB60D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3154F1E1A81673E00EEB60D /* Main.storyboard */; };
 		E3154F221A81673E00EEB60D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3154F211A81673E00EEB60D /* Images.xcassets */; };
 		E3154F251A81673E00EEB60D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3154F231A81673E00EEB60D /* LaunchScreen.xib */; };
 		E3154F311A81673E00EEB60D /* UWantBProducerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3154F301A81673E00EEB60D /* UWantBProducerTests.m */; };
+		E3154F441A816A9200EEB60D /* effectsBank.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3154F431A816A9200EEB60D /* effectsBank.mm */; };
+		E3154F491A816C3300EEB60D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3154F461A816C3300EEB60D /* Accelerate.framework */; };
+		E3154F4A1A816C3300EEB60D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3154F471A816C3300EEB60D /* AudioToolbox.framework */; };
+		E3154F4B1A816C3300EEB60D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3154F481A816C3300EEB60D /* AVFoundation.framework */; };
+		E3154F4E1A816C7000EEB60D /* echoEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3154F4C1A816C7000EEB60D /* echoEffect.mm */; };
+		E3154F541A817A0600EEB60D /* functionGenerator.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3154F521A817A0600EEB60D /* functionGenerator.mm */; };
+		E3154F571A8191E500EEB60D /* IosAudioController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3154F561A8191E500EEB60D /* IosAudioController.mm */; };
+		E3154F5A1A819B0400EEB60D /* reverbEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3154F581A819B0400EEB60D /* reverbEffect.mm */; };
+		E34173E81A8AF35B00298057 /* Green Light.png in Resources */ = {isa = PBXBuildFile; fileRef = E34173E61A8AF35B00298057 /* Green Light.png */; };
+		E34173E91A8AF35B00298057 /* Red Light.png in Resources */ = {isa = PBXBuildFile; fileRef = E34173E71A8AF35B00298057 /* Red Light.png */; };
+		E34173EC1A8AF9D200298057 /* LevelManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E34173EB1A8AF9D200298057 /* LevelManager.mm */; };
+		E34173EF1A8AFA2000298057 /* EffectBankSettingManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = E34173ED1A8AFA2000298057 /* EffectBankSettingManager.mm */; };
+		E3434ADB1A81AFD9009D071C /* filter.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3434AD91A81AFD9009D071C /* filter.mm */; };
+		E3434ADE1A81B00C009D071C /* phaser.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3434ADC1A81B00C009D071C /* phaser.mm */; };
+		E3434AE11A81B01B009D071C /* lfo.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3434ADF1A81B01B009D071C /* lfo.mm */; };
+		E35417F41A871EDE00121F40 /* Breakbeat Faceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35417EA1A871EDE00121F40 /* Breakbeat Faceplate.jpg */; };
+		E35417F51A871EDE00121F40 /* Echo Faceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35417EB1A871EDE00121F40 /* Echo Faceplate.jpg */; };
+		E35417F61A871EDE00121F40 /* Hi Pass Faceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35417EC1A871EDE00121F40 /* Hi Pass Faceplate.jpg */; };
+		E35417F71A871EDE00121F40 /* Housebeat Faceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35417ED1A871EDE00121F40 /* Housebeat Faceplate.jpg */; };
+		E35417F81A871EDE00121F40 /* Low Pass Faceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35417EE1A871EDE00121F40 /* Low Pass Faceplate.jpg */; };
+		E35417F91A871EDE00121F40 /* Phaser Faceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35417EF1A871EDE00121F40 /* Phaser Faceplate.jpg */; };
+		E35417FA1A871EDE00121F40 /* Reverb Faceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E35417F01A871EDE00121F40 /* Reverb Faceplate.jpg */; };
+		E35417FB1A871EDE00121F40 /* switch down.png in Resources */ = {isa = PBXBuildFile; fileRef = E35417F11A871EDE00121F40 /* switch down.png */; };
+		E35417FC1A871EDE00121F40 /* Switch Up.png in Resources */ = {isa = PBXBuildFile; fileRef = E35417F21A871EDE00121F40 /* Switch Up.png */; };
+		E35417FF1A8720C700121F40 /* TitleScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = E35417FE1A8720C700121F40 /* TitleScreen.png */; };
+		E35418061A8722E500121F40 /* MainScreenController.m in Sources */ = {isa = PBXBuildFile; fileRef = E35418041A8722E500121F40 /* MainScreenController.m */; };
+		E35418071A8722E500121F40 /* MainScreenController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35418051A8722E500121F40 /* MainScreenController.xib */; };
+		E354180E1A87245800121F40 /* Fader Knob.png in Resources */ = {isa = PBXBuildFile; fileRef = E354180D1A87245800121F40 /* Fader Knob.png */; };
+		E35418171A87264100121F40 /* FunctionGeneratorView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E35418151A87264100121F40 /* FunctionGeneratorView.mm */; };
+		E35418181A87264100121F40 /* FunctionGeneratorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E35418161A87264100121F40 /* FunctionGeneratorView.xib */; };
+		E35C9B341A8A98440028D55B /* EchoModuleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E35C9B331A8A98440028D55B /* EchoModuleView.mm */; };
+		E35C9B371A8A98690028D55B /* PhaserModuleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E35C9B361A8A98690028D55B /* PhaserModuleView.mm */; };
+		E35C9B3A1A8A987D0028D55B /* ReverbModuleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E35C9B391A8A987D0028D55B /* ReverbModuleView.mm */; };
+		E3A45EA21A932F400088FAB7 /* DubstepController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3A45EA11A932F400088FAB7 /* DubstepController.mm */; };
+		E3A4E4E21A933C0C00C3236E /* StyleTableController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3A4E4E11A933C0C00C3236E /* StyleTableController.mm */; };
+		E3D799911A89551B004B7CDB /* Biquad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3D7998D1A89551B004B7CDB /* Biquad.cpp */; };
+		E3D799921A89551B004B7CDB /* DSButterworthFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E3D7998F1A89551B004B7CDB /* DSButterworthFilter.cpp */; };
+		E3D799951A898524004B7CDB /* FilterModuleView.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3D799941A898524004B7CDB /* FilterModuleView.mm */; };
+		E3DDEC651A94147800815B82 /* SourceFaceplate.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3DDEC641A94147800815B82 /* SourceFaceplate.jpg */; };
+		E3F64CD91A8AD9EB00BD2902 /* sequencer.mm in Sources */ = {isa = PBXBuildFile; fileRef = E3F64CD71A8AD9EB00BD2902 /* sequencer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,17 +70,75 @@
 		E3154F121A81673E00EEB60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3154F131A81673E00EEB60D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3154F151A81673E00EEB60D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E3154F161A81673E00EEB60D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E3154F181A81673E00EEB60D /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		E3154F191A81673E00EEB60D /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		E3154F1B1A81673E00EEB60D /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		E3154F1C1A81673E00EEB60D /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E3154F161A81673E00EEB60D /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		E3154F1F1A81673E00EEB60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E3154F211A81673E00EEB60D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E3154F241A81673E00EEB60D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E3154F2A1A81673E00EEB60D /* UWantBProducerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UWantBProducerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3154F2F1A81673E00EEB60D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3154F301A81673E00EEB60D /* UWantBProducerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UWantBProducerTests.m; sourceTree = "<group>"; };
+		E3154F421A816A9200EEB60D /* effectsBank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = effectsBank.h; sourceTree = "<group>"; };
+		E3154F431A816A9200EEB60D /* effectsBank.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = effectsBank.mm; sourceTree = "<group>"; };
+		E3154F451A816AB800EEB60D /* effectSuperClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = effectSuperClass.h; sourceTree = "<group>"; };
+		E3154F461A816C3300EEB60D /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		E3154F471A816C3300EEB60D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		E3154F481A816C3300EEB60D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		E3154F4C1A816C7000EEB60D /* echoEffect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = echoEffect.mm; sourceTree = "<group>"; };
+		E3154F4D1A816C7000EEB60D /* echoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = echoEffect.h; sourceTree = "<group>"; };
+		E3154F521A817A0600EEB60D /* functionGenerator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = functionGenerator.mm; sourceTree = "<group>"; };
+		E3154F531A817A0600EEB60D /* functionGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functionGenerator.h; sourceTree = "<group>"; };
+		E3154F551A8191E500EEB60D /* IosAudioController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IosAudioController.h; sourceTree = "<group>"; };
+		E3154F561A8191E500EEB60D /* IosAudioController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = IosAudioController.mm; sourceTree = "<group>"; };
+		E3154F581A819B0400EEB60D /* reverbEffect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = reverbEffect.mm; sourceTree = "<group>"; };
+		E3154F591A819B0400EEB60D /* reverbEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverbEffect.h; sourceTree = "<group>"; };
+		E34173E61A8AF35B00298057 /* Green Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Green Light.png"; path = "Images/Green Light.png"; sourceTree = "<group>"; };
+		E34173E71A8AF35B00298057 /* Red Light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Red Light.png"; path = "Images/Red Light.png"; sourceTree = "<group>"; };
+		E34173EA1A8AF9D200298057 /* LevelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelManager.h; sourceTree = "<group>"; };
+		E34173EB1A8AF9D200298057 /* LevelManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LevelManager.mm; sourceTree = "<group>"; };
+		E34173ED1A8AFA2000298057 /* EffectBankSettingManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EffectBankSettingManager.mm; sourceTree = "<group>"; };
+		E34173EE1A8AFA2000298057 /* EffectBankSettingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EffectBankSettingManager.h; sourceTree = "<group>"; };
+		E3434AD91A81AFD9009D071C /* filter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = filter.mm; sourceTree = "<group>"; };
+		E3434ADA1A81AFD9009D071C /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		E3434ADC1A81B00C009D071C /* phaser.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = phaser.mm; sourceTree = "<group>"; };
+		E3434ADD1A81B00C009D071C /* phaser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = phaser.h; sourceTree = "<group>"; };
+		E3434ADF1A81B01B009D071C /* lfo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = lfo.mm; sourceTree = "<group>"; };
+		E3434AE01A81B01B009D071C /* lfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lfo.h; sourceTree = "<group>"; };
+		E35417EA1A871EDE00121F40 /* Breakbeat Faceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Breakbeat Faceplate.jpg"; path = "Images/Breakbeat Faceplate.jpg"; sourceTree = "<group>"; };
+		E35417EB1A871EDE00121F40 /* Echo Faceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Echo Faceplate.jpg"; path = "Images/Echo Faceplate.jpg"; sourceTree = "<group>"; };
+		E35417EC1A871EDE00121F40 /* Hi Pass Faceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Hi Pass Faceplate.jpg"; path = "Images/Hi Pass Faceplate.jpg"; sourceTree = "<group>"; };
+		E35417ED1A871EDE00121F40 /* Housebeat Faceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Housebeat Faceplate.jpg"; path = "Images/Housebeat Faceplate.jpg"; sourceTree = "<group>"; };
+		E35417EE1A871EDE00121F40 /* Low Pass Faceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Low Pass Faceplate.jpg"; path = "Images/Low Pass Faceplate.jpg"; sourceTree = "<group>"; };
+		E35417EF1A871EDE00121F40 /* Phaser Faceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Phaser Faceplate.jpg"; path = "Images/Phaser Faceplate.jpg"; sourceTree = "<group>"; };
+		E35417F01A871EDE00121F40 /* Reverb Faceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Reverb Faceplate.jpg"; path = "Images/Reverb Faceplate.jpg"; sourceTree = "<group>"; };
+		E35417F11A871EDE00121F40 /* switch down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "switch down.png"; path = "Images/switch down.png"; sourceTree = "<group>"; };
+		E35417F21A871EDE00121F40 /* Switch Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Switch Up.png"; path = "Images/Switch Up.png"; sourceTree = "<group>"; };
+		E35417FE1A8720C700121F40 /* TitleScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TitleScreen.png; path = Images/TitleScreen.png; sourceTree = "<group>"; };
+		E35418031A8722E500121F40 /* MainScreenController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainScreenController.h; sourceTree = "<group>"; };
+		E35418041A8722E500121F40 /* MainScreenController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainScreenController.m; sourceTree = "<group>"; };
+		E35418051A8722E500121F40 /* MainScreenController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainScreenController.xib; sourceTree = "<group>"; };
+		E354180D1A87245800121F40 /* Fader Knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Fader Knob.png"; path = "Images/Fader Knob.png"; sourceTree = "<group>"; };
+		E35418141A87264100121F40 /* FunctionGeneratorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunctionGeneratorView.h; sourceTree = "<group>"; };
+		E35418151A87264100121F40 /* FunctionGeneratorView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FunctionGeneratorView.mm; sourceTree = "<group>"; };
+		E35418161A87264100121F40 /* FunctionGeneratorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FunctionGeneratorView.xib; sourceTree = "<group>"; };
+		E35C9B321A8A98440028D55B /* EchoModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EchoModuleView.h; sourceTree = "<group>"; };
+		E35C9B331A8A98440028D55B /* EchoModuleView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EchoModuleView.mm; sourceTree = "<group>"; };
+		E35C9B351A8A98690028D55B /* PhaserModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhaserModuleView.h; sourceTree = "<group>"; };
+		E35C9B361A8A98690028D55B /* PhaserModuleView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PhaserModuleView.mm; sourceTree = "<group>"; };
+		E35C9B381A8A987D0028D55B /* ReverbModuleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReverbModuleView.h; sourceTree = "<group>"; };
+		E35C9B391A8A987D0028D55B /* ReverbModuleView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ReverbModuleView.mm; sourceTree = "<group>"; };
+		E3A45EA01A932F400088FAB7 /* DubstepController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DubstepController.h; sourceTree = "<group>"; };
+		E3A45EA11A932F400088FAB7 /* DubstepController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DubstepController.mm; sourceTree = "<group>"; };
+		E3A4E4E01A933C0C00C3236E /* StyleTableController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StyleTableController.h; sourceTree = "<group>"; };
+		E3A4E4E11A933C0C00C3236E /* StyleTableController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StyleTableController.mm; sourceTree = "<group>"; };
+		E3D7998D1A89551B004B7CDB /* Biquad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Biquad.cpp; sourceTree = "<group>"; };
+		E3D7998E1A89551B004B7CDB /* Biquad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Biquad.h; sourceTree = "<group>"; };
+		E3D7998F1A89551B004B7CDB /* DSButterworthFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DSButterworthFilter.cpp; sourceTree = "<group>"; };
+		E3D799901A89551B004B7CDB /* DSButterworthFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSButterworthFilter.h; sourceTree = "<group>"; };
+		E3D799931A898524004B7CDB /* FilterModuleView.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = FilterModuleView.h; path = UWantBProducer/FilterModuleView.h; sourceTree = SOURCE_ROOT; };
+		E3D799941A898524004B7CDB /* FilterModuleView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FilterModuleView.mm; sourceTree = "<group>"; };
+		E3DDEC641A94147800815B82 /* SourceFaceplate.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = SourceFaceplate.jpg; path = Images/SourceFaceplate.jpg; sourceTree = "<group>"; };
+		E3F64CD71A8AD9EB00BD2902 /* sequencer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = sequencer.mm; sourceTree = "<group>"; };
+		E3F64CD81A8AD9EB00BD2902 /* sequencer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sequencer.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +146,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3154F491A816C3300EEB60D /* Accelerate.framework in Frameworks */,
+				E3154F4A1A816C3300EEB60D /* AudioToolbox.framework in Frameworks */,
+				E3154F4B1A816C3300EEB60D /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +165,10 @@
 		E3154F051A81673E00EEB60D = {
 			isa = PBXGroup;
 			children = (
+				E3154F461A816C3300EEB60D /* Accelerate.framework */,
+				E3154F471A816C3300EEB60D /* AudioToolbox.framework */,
+				E3154F481A816C3300EEB60D /* AVFoundation.framework */,
+				E3154F3A1A81676300EEB60D /* Audio Enginer */,
 				E3154F101A81673E00EEB60D /* UWantBProducer */,
 				E3154F2D1A81673E00EEB60D /* UWantBProducerTests */,
 				E3154F0F1A81673E00EEB60D /* Products */,
@@ -84,16 +187,29 @@
 		E3154F101A81673E00EEB60D /* UWantBProducer */ = {
 			isa = PBXGroup;
 			children = (
+				E3A45E9F1A932F200088FAB7 /* InformationScreens */,
+				E35C9B321A8A98440028D55B /* EchoModuleView.h */,
+				E35C9B331A8A98440028D55B /* EchoModuleView.mm */,
+				E35C9B351A8A98690028D55B /* PhaserModuleView.h */,
+				E35C9B361A8A98690028D55B /* PhaserModuleView.mm */,
+				E35C9B381A8A987D0028D55B /* ReverbModuleView.h */,
+				E35C9B391A8A987D0028D55B /* ReverbModuleView.mm */,
+				E35418141A87264100121F40 /* FunctionGeneratorView.h */,
+				E35418151A87264100121F40 /* FunctionGeneratorView.mm */,
+				E3D799931A898524004B7CDB /* FilterModuleView.h */,
+				E3D799941A898524004B7CDB /* FilterModuleView.mm */,
 				E3154F151A81673E00EEB60D /* AppDelegate.h */,
-				E3154F161A81673E00EEB60D /* AppDelegate.m */,
-				E3154F181A81673E00EEB60D /* MasterViewController.h */,
-				E3154F191A81673E00EEB60D /* MasterViewController.m */,
-				E3154F1B1A81673E00EEB60D /* DetailViewController.h */,
-				E3154F1C1A81673E00EEB60D /* DetailViewController.m */,
-				E3154F1E1A81673E00EEB60D /* Main.storyboard */,
-				E3154F211A81673E00EEB60D /* Images.xcassets */,
+				E3154F161A81673E00EEB60D /* AppDelegate.mm */,
 				E3154F231A81673E00EEB60D /* LaunchScreen.xib */,
+				E3154F1E1A81673E00EEB60D /* Main.storyboard */,
+				E35418161A87264100121F40 /* FunctionGeneratorView.xib */,
+				E3154F211A81673E00EEB60D /* Images.xcassets */,
 				E3154F111A81673E00EEB60D /* Supporting Files */,
+				E35418031A8722E500121F40 /* MainScreenController.h */,
+				E35418041A8722E500121F40 /* MainScreenController.m */,
+				E35418051A8722E500121F40 /* MainScreenController.xib */,
+				E34173EA1A8AF9D200298057 /* LevelManager.h */,
+				E34173EB1A8AF9D200298057 /* LevelManager.mm */,
 			);
 			path = UWantBProducer;
 			sourceTree = "<group>";
@@ -122,6 +238,87 @@
 				E3154F2F1A81673E00EEB60D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3154F3A1A81676300EEB60D /* Audio Enginer */ = {
+			isa = PBXGroup;
+			children = (
+				E35417E91A871ECE00121F40 /* Images */,
+				E3154F3C1A81677600EEB60D /* Core Audio */,
+				E3154F3B1A81676D00EEB60D /* Effects */,
+			);
+			name = "Audio Enginer";
+			sourceTree = "<group>";
+		};
+		E3154F3B1A81676D00EEB60D /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				E3D7998D1A89551B004B7CDB /* Biquad.cpp */,
+				E3D7998E1A89551B004B7CDB /* Biquad.h */,
+				E3D7998F1A89551B004B7CDB /* DSButterworthFilter.cpp */,
+				E3D799901A89551B004B7CDB /* DSButterworthFilter.h */,
+				E3154F421A816A9200EEB60D /* effectsBank.h */,
+				E3154F431A816A9200EEB60D /* effectsBank.mm */,
+				E3154F451A816AB800EEB60D /* effectSuperClass.h */,
+				E3154F4C1A816C7000EEB60D /* echoEffect.mm */,
+				E3154F4D1A816C7000EEB60D /* echoEffect.h */,
+				E3154F521A817A0600EEB60D /* functionGenerator.mm */,
+				E3154F531A817A0600EEB60D /* functionGenerator.h */,
+				E3154F581A819B0400EEB60D /* reverbEffect.mm */,
+				E3154F591A819B0400EEB60D /* reverbEffect.h */,
+				E3434AD91A81AFD9009D071C /* filter.mm */,
+				E3434ADA1A81AFD9009D071C /* filter.h */,
+				E3434ADC1A81B00C009D071C /* phaser.mm */,
+				E3434ADD1A81B00C009D071C /* phaser.h */,
+				E3434ADF1A81B01B009D071C /* lfo.mm */,
+				E3434AE01A81B01B009D071C /* lfo.h */,
+				E3F64CD71A8AD9EB00BD2902 /* sequencer.mm */,
+				E3F64CD81A8AD9EB00BD2902 /* sequencer.h */,
+				E34173ED1A8AFA2000298057 /* EffectBankSettingManager.mm */,
+				E34173EE1A8AFA2000298057 /* EffectBankSettingManager.h */,
+			);
+			name = Effects;
+			sourceTree = "<group>";
+		};
+		E3154F3C1A81677600EEB60D /* Core Audio */ = {
+			isa = PBXGroup;
+			children = (
+				E3154F551A8191E500EEB60D /* IosAudioController.h */,
+				E3154F561A8191E500EEB60D /* IosAudioController.mm */,
+			);
+			name = "Core Audio";
+			sourceTree = "<group>";
+		};
+		E35417E91A871ECE00121F40 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E3DDEC641A94147800815B82 /* SourceFaceplate.jpg */,
+				E34173E61A8AF35B00298057 /* Green Light.png */,
+				E34173E71A8AF35B00298057 /* Red Light.png */,
+				E354180D1A87245800121F40 /* Fader Knob.png */,
+				E35417FE1A8720C700121F40 /* TitleScreen.png */,
+				E35417EA1A871EDE00121F40 /* Breakbeat Faceplate.jpg */,
+				E35417EB1A871EDE00121F40 /* Echo Faceplate.jpg */,
+				E35417EC1A871EDE00121F40 /* Hi Pass Faceplate.jpg */,
+				E35417ED1A871EDE00121F40 /* Housebeat Faceplate.jpg */,
+				E35417EE1A871EDE00121F40 /* Low Pass Faceplate.jpg */,
+				E35417EF1A871EDE00121F40 /* Phaser Faceplate.jpg */,
+				E35417F01A871EDE00121F40 /* Reverb Faceplate.jpg */,
+				E35417F11A871EDE00121F40 /* switch down.png */,
+				E35417F21A871EDE00121F40 /* Switch Up.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		E3A45E9F1A932F200088FAB7 /* InformationScreens */ = {
+			isa = PBXGroup;
+			children = (
+				E3A45EA01A932F400088FAB7 /* DubstepController.h */,
+				E3A45EA11A932F400088FAB7 /* DubstepController.mm */,
+				E3A4E4E01A933C0C00C3236E /* StyleTableController.h */,
+				E3A4E4E11A933C0C00C3236E /* StyleTableController.mm */,
+			);
+			name = InformationScreens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,9 +401,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E35417F41A871EDE00121F40 /* Breakbeat Faceplate.jpg in Resources */,
+				E34173E91A8AF35B00298057 /* Red Light.png in Resources */,
 				E3154F201A81673E00EEB60D /* Main.storyboard in Resources */,
+				E35417FB1A871EDE00121F40 /* switch down.png in Resources */,
+				E35418181A87264100121F40 /* FunctionGeneratorView.xib in Resources */,
+				E34173E81A8AF35B00298057 /* Green Light.png in Resources */,
+				E35417F51A871EDE00121F40 /* Echo Faceplate.jpg in Resources */,
+				E35418071A8722E500121F40 /* MainScreenController.xib in Resources */,
+				E35417F81A871EDE00121F40 /* Low Pass Faceplate.jpg in Resources */,
+				E35417FA1A871EDE00121F40 /* Reverb Faceplate.jpg in Resources */,
 				E3154F251A81673E00EEB60D /* LaunchScreen.xib in Resources */,
 				E3154F221A81673E00EEB60D /* Images.xcassets in Resources */,
+				E35417FF1A8720C700121F40 /* TitleScreen.png in Resources */,
+				E3DDEC651A94147800815B82 /* SourceFaceplate.jpg in Resources */,
+				E35417F61A871EDE00121F40 /* Hi Pass Faceplate.jpg in Resources */,
+				E35417F71A871EDE00121F40 /* Housebeat Faceplate.jpg in Resources */,
+				E354180E1A87245800121F40 /* Fader Knob.png in Resources */,
+				E35417F91A871EDE00121F40 /* Phaser Faceplate.jpg in Resources */,
+				E35417FC1A871EDE00121F40 /* Switch Up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,10 +437,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3154F171A81673E00EEB60D /* AppDelegate.m in Sources */,
-				E3154F1A1A81673E00EEB60D /* MasterViewController.m in Sources */,
+				E35C9B3A1A8A987D0028D55B /* ReverbModuleView.mm in Sources */,
+				E35418171A87264100121F40 /* FunctionGeneratorView.mm in Sources */,
+				E3D799951A898524004B7CDB /* FilterModuleView.mm in Sources */,
+				E3D799911A89551B004B7CDB /* Biquad.cpp in Sources */,
+				E3154F441A816A9200EEB60D /* effectsBank.mm in Sources */,
+				E3154F171A81673E00EEB60D /* AppDelegate.mm in Sources */,
+				E34173EF1A8AFA2000298057 /* EffectBankSettingManager.mm in Sources */,
+				E3A4E4E21A933C0C00C3236E /* StyleTableController.mm in Sources */,
+				E3154F541A817A0600EEB60D /* functionGenerator.mm in Sources */,
+				E3154F4E1A816C7000EEB60D /* echoEffect.mm in Sources */,
 				E3154F141A81673E00EEB60D /* main.m in Sources */,
-				E3154F1D1A81673E00EEB60D /* DetailViewController.m in Sources */,
+				E3F64CD91A8AD9EB00BD2902 /* sequencer.mm in Sources */,
+				E3434ADE1A81B00C009D071C /* phaser.mm in Sources */,
+				E3154F571A8191E500EEB60D /* IosAudioController.mm in Sources */,
+				E3434ADB1A81AFD9009D071C /* filter.mm in Sources */,
+				E35C9B341A8A98440028D55B /* EchoModuleView.mm in Sources */,
+				E3A45EA21A932F400088FAB7 /* DubstepController.mm in Sources */,
+				E3434AE11A81B01B009D071C /* lfo.mm in Sources */,
+				E35418061A8722E500121F40 /* MainScreenController.m in Sources */,
+				E34173EC1A8AF9D200298057 /* LevelManager.mm in Sources */,
+				E35C9B371A8A98690028D55B /* PhaserModuleView.mm in Sources */,
+				E3154F5A1A819B0400EEB60D /* reverbEffect.mm in Sources */,
+				E3D799921A89551B004B7CDB /* DSButterworthFilter.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +650,7 @@
 				E3154F361A81673E00EEB60D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3154F371A81673E00EEB60D /* Build configuration list for PBXNativeTarget "UWantBProducerTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +659,7 @@
 				E3154F391A81673E00EEB60D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

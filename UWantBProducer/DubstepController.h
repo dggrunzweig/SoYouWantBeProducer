@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "effectsBank.h"
+
 
 @interface DubstepController : UIViewController
+
+@property IBOutlet UITapGestureRecognizer* mTapGestureRecognizer;
+@property IBOutlet UILabel* mTextArea;
+@property IBOutlet UILabel* mTitleArea;
 
 @end

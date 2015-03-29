@@ -9,5 +9,17 @@
 #ifndef UWantBProducer_Header_h
 #define UWantBProducer_Header_h
 
+#import <Accelerate/Accelerate.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import <AVFoundation/AVFoundation.h>
+
+
+
+class effectSuperClass
+{
+public:
+    float mWetDryMix; // between 0 and 1, represents the mix of the effect
+    void setWetDryMix(float mix){ mWetDryMix = mix; };
+};
 
 #endif
